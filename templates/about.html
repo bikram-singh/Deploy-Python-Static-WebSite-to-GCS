@@ -4,83 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - gcpcloudhub.in</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <style>
-        /* --- General Body Styling --- */
-        body {
-            background: linear-gradient(to right, #eef2f3, #dbe9f0); /* Soft gradient background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-
-        /* --- Main Content Container --- */
-        main {
-            max-width: 800px;
-            margin: 40px auto; /* Centering the content */
-            padding: 25px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
-            text-align: center; /* Center aligning text inside the card */
-        }
-
-        /* --- Welcome Title Styling (Replaces the old h1) --- */
-        .welcome-title {
-            color: #0d6efd; /* A strong, trustworthy blue */
-            font-weight: bold;
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-
-        /* --- Disclaimer Box Styling --- */
-        .disclaimer {
-            background-color: #fff3cd; /* A warm, noticeable yellow */
-            border-left: 5px solid #ffc107; /* Accent border */
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-            text-align: left; /* Aligning text to the left for readability */
-            font-size: 1.1em;
-        }
-
-        .disclaimer strong {
-            color: #856404; /* Darker text for contrast */
-        }
-        
-        /* --- Footer Styling --- */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #777;
-        }
-
-        /* --- Responsive Design Adjustments --- */
-        @media (max-width: 768px) {
-            main {
-                margin: 20px;
-                padding: 20px;
-            }
-            .welcome-title {
-                font-size: 2em;
-            }
-        }
-    </style>
+    <!-- This now links to the shared style file for a consistent look -->
+    <link rel="stylesheet" href="static/css/google-style.css">
 </head>
 <body>
     <header>
+        <img src="static/images/logo.png" alt="Organization Logo">
         <nav>
-            <img src="static/images/logo.png" alt="Organization Logo" style="height: 50px;">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <!-- CORRECTED LINK: Now points to "/" -->
+                <li><a href="/" class="google-blue">Home</a></li>
+                <li><a href="about.html" class="google-red">About</a></li>
+                <li><a href="contact.html" class="google-green">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- The old H1 is removed, and this P tag is now the styled title -->
-        <p class="welcome-title">Welcome to gcpcloudhub.in</p>
+        <h1>About This Project</h1>
 
         <div class="disclaimer">
             <p><strong>Please Note:</strong> This website and the 'gcpcloudhub.in' organization have been created for educational and learning purposes only.</p>
