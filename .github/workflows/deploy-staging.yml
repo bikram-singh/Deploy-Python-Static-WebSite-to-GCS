@@ -2,7 +2,8 @@ name: Deploy to Staging (GCS + CDN)
 
 on:
   push:
-    branches: ["main"]
+    #branches: ["main"]
+    workflow_dispatch: # Manual trigger 
 
 jobs:
   deploy:
