@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - gcpcloudhub.in</title>
-    <!-- This now links to the shared style file for a consistent look -->
+    <!-- This links to the shared style file for a consistent look -->
     <link rel="stylesheet" href="static/css/google-style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
     </header>
 
     <main>
-        <!-- The title is now broken into spans with the requested colors -->
+        <!-- This is the unique content for your About page -->
         <h1 class="page-title">
             <span class="google-blue">Welcome</span>
             <span class="google-red">to</span>
@@ -38,21 +38,4 @@
         <p>&copy; 2025 gcpcloudhub.in. All rights reserved.</p>
     </footer>
 </body>
-</html>```
-
-### **One Small Update for Your CSS**
-
-To ensure the new title on this page looks as good as the one on the homepage, please add the following CSS class to your `static/css/google-style.css` file. This handles the spacing and font size for titles that aren't the main homepage title.
-
-Just add these few lines to the end of your `google-style.css` file:
-
-```css
-/* Add this to the end of static/css/google-style.css */
-
-.page-title {
-    font-size: 2.5em; /* Slightly smaller than homepage title */
-    font-weight: 600;
-}
-.page-title::after {
-    display: none; /* Removes the long colorful underline on secondary pages */
-}
+</html>
