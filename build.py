@@ -43,4 +43,4 @@ if __name__ == "__main__":
             shutil.rmtree(static_dest)
         shutil.copytree(static_source, static_dest)
     
-    print(f"✅ Site built successfully in the '{output_dir}/' directory!")```
+    print(f"✅ Site built successfully in the '{output_dir}/' directory!")
