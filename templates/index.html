@@ -25,37 +25,16 @@
             align-items: center;
         }
         
-        header img {
-            height: 50px;
-        }
+        header img { height: 50px; }
+        header nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        header nav ul li { margin-left: 25px; }
+        header nav ul li a { text-decoration: none; color: #0d6efd; font-weight: bold; font-size: 1.1em; transition: color 0.3s; }
+        header nav ul li a:hover { color: #0a58ca; }
 
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        header nav ul li {
-            margin-left: 25px;
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: #0d6efd;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
-
-        header nav ul li a:hover {
-            color: #0a58ca;
-        }
-
-        /* --- Main Content Container (Matches About Page) --- */
+        /* --- Main Content Container --- */
         main {
             max-width: 800px;
-            margin: 60px auto; /* More space from the header */
+            margin: 60px auto;
             padding: 40px;
             background-color: #ffffff;
             border-radius: 12px;
@@ -63,51 +42,27 @@
             text-align: center;
         }
 
-        /* --- Main Heading Styling (Matches About Page) --- */
-        h1 {
-            /* The base color is removed from here */
-            margin-bottom: 20px;
-            font-size: 2.8em;
-        }
+        /* --- Main Heading Styling --- */
+        h1 { margin-bottom: 20px; font-size: 2.8em; }
         
-        /* --- NEW: Color classes for the heading --- */
+        /* Color classes for the heading */
         .google-blue   { color: #4285F4; }
         .google-red    { color: #EA4335; }
         .google-yellow { color: #FBBC05; }
         .google-green  { color: #34A853; }
 
-
-        /* --- Paragraph Styling --- */
-        p {
-            font-size: 1.2em;
-            color: #5a6773;
-            line-height: 1.6;
-        }
+        /* Paragraph Styling */
+        p { font-size: 1.2em; color: #5a6773; line-height: 1.6; }
         
-        /* --- Footer Styling (Matches About Page) --- */
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #777;
-        }
+        /* Footer Styling */
+        footer { text-align: center; padding: 20px; margin-top: 40px; color: #777; }
 
-        /* --- Responsive Design Adjustments --- */
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                padding: 20px;
-            }
-            header nav ul {
-                margin-top: 15px;
-            }
-            main {
-                margin: 30px 20px;
-                padding: 25px;
-            }
-            h1 {
-                font-size: 2.2em;
-            }
+            header { flex-direction: column; padding: 20px; }
+            header nav ul { margin-top: 15px; }
+            main { margin: 30px 20px; padding: 25px; }
+            h1 { font-size: 2.2em; }
         }
     </style>
 </head>
@@ -116,7 +71,8 @@
         <img src="static/images/logo.png" alt="Organization Logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <!-- LINK CORRECTED TO "/" -->
+                <li><a href="/">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -124,7 +80,6 @@
     </header>
 
     <main>
-        <!-- The H1 is now broken into spans with color classes -->
         <h1>
             <span class="google-blue">Welcome to</span>
             <span class="google-red">GCP</span>
