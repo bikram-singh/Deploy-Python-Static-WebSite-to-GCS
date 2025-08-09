@@ -4,77 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - gcpcloudhub.in</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <style>
-        /* --- General Body Styling (Matches About Page) --- */
-        body {
-            background: linear-gradient(to right, #eef2f3, #dbe9f0);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* --- Header & Navigation Styling --- */
-        header {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header img { height: 50px; }
-        header nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
-        header nav ul li { margin-left: 25px; }
-        header nav ul li a { text-decoration: none; color: #0d6efd; font-weight: bold; font-size: 1.1em; transition: color 0.3s; }
-        header nav ul li a:hover { color: #0a58ca; }
-
-        /* --- Main Content Container --- */
-        main {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 40px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-            text-align: center;
-        }
-
-        /* --- Main Heading Styling --- */
-        h1 { margin-bottom: 20px; font-size: 2.8em; }
-        
-        /* Color classes for the heading */
-        .google-blue   { color: #4285F4; }
-        .google-red    { color: #EA4335; }
-        .google-yellow { color: #FBBC05; }
-        .google-green  { color: #34A853; }
-
-        /* Paragraph Styling */
-        p { font-size: 1.2em; color: #5a6773; line-height: 1.6; }
-        
-        /* Footer Styling */
-        footer { text-align: center; padding: 20px; margin-top: 40px; color: #777; }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header { flex-direction: column; padding: 20px; }
-            header nav ul { margin-top: 15px; }
-            main { margin: 30px 20px; padding: 25px; }
-            h1 { font-size: 2.2em; }
-        }
-    </style>
+    <!-- Links to the shared google-style.css file -->
+    <link rel="stylesheet" href="static/css/google-style.css">
 </head>
 <body>
     <header>
         <img src="static/images/logo.png" alt="Organization Logo">
         <nav>
             <ul>
-                <!-- LINK CORRECTED TO "/" -->
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <!-- "About" link has been removed -->
+                <li><a href="/" class="google-blue">Home</a></li>
+                <li><a href="contact.html" class="google-green">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -86,6 +26,7 @@
             <span class="google-yellow">Cloud</span>
             <span class="google-green">Hub !</span>
         </h1>
+        <!-- This paragraph now serves as the disclaimer -->
         <p>Please Note: This website and the 'gcpcloudhub.in' organization have been created for educational and learning purposes only.</p>
     </main>
 
