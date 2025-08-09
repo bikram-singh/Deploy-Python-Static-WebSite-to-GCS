@@ -33,8 +33,9 @@ jobs:
       with:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
 
-    - run: |
-        gsutil -m rsync -r dist gs://${{ secrets.GCS_BUCKET_STAGING }}
-        gcloud compute url-maps invalidate-cdn-cache staging-cdn-map \
-          --path "/*" \
-          --project ${{ secrets.GCP_PROJECT_ID }}
+   - run: |
+    gsutil -m rsync -r dist gs://${{ secrets.GCS_BUCKET_STAGING }}
+    gcloud compute url-maps invalidate-cdn-cache lb-for-static-website \
+      --path "/*" \
+      --project ${{ secrets.GCP_PROJECT_ID }}
+
