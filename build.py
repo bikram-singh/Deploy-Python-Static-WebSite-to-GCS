@@ -13,12 +13,7 @@ def home():
 def about():
     return render_template("about.html")
 
-# --- ADDED: Define a route for the services page ---
-@app.route("/services")
-def services():
-    return render_template("services.html")
-
-# --- ADDED: Define a route for the contact page ---
+# Define a route for the contact page
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
@@ -29,13 +24,12 @@ if __name__ == "__main__":
     os.makedirs(output_dir, exist_ok=True)
 
     with app.test_request_context():
-        # --- UPDATED: Add the new pages to the build list ---
-        # The list now includes all four pages
+        # --- UPDATED: The services page has been removed from the build list. ---
+        # The list now includes the remaining three pages.
         # Format: (URL path, output filename)
         routes_to_build = [
             ("/", "index.html"),
             ("/about", "about.html"),
-            ("/services", "services.html"),
             ("/contact", "contact.html")
         ]
 
@@ -49,6 +43,11 @@ if __name__ == "__main__":
                 f.write(html)
 
     # Copy the static assets (CSS, images) to the output directory
-    os.system("cp -r static dist/")
+    # Using shutil.copytree is a more cross-platform compatible way than 'cp'
+    if os.path.exists("static"):
+        if os.path.exists(os.path.join(output_dir, "static")):
+            import shutil
+            shutil.rmtree(os.path.join(output_dir, "static"))
+        os.system("cp -r static dist/")
     
     print(f"✅ Site built successfully in the '{output_dir}/' directory!")
